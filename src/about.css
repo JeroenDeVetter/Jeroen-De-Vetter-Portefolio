@@ -1,0 +1,45 @@
+.aboutMe {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 386px;
+    width: 325px;
+    box-shadow: rgba(0,7,13,0.10) 0px 2px 8px;
+    border-radius: 40px;
+}
+
+.aboutContent {
+
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePic {
+    margin-top: 30px;
+    width: 117px;
+    height: 117px;
+    border-radius: 100%;
+}
+
+.myName {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.someInfo {
+    font-weight: lighter;
+    font-size:0.72rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.iAm{
+    margin-top: -15px;
+    color: #FF4848;
+    font-weight: bold;
+}
