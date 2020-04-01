@@ -1,6 +1,6 @@
 import React from "react";
-import NavMobile from "../component/navMobile";
-import FooterMobile from "../component/footerMobile";
+import Nav from "../component/nav";
+import Footer from "../component/footer";
 import '../about.css';
 import profile from '../assets/img/58384030_1821627904604928_3336419814888439808_n_upscaled_image_x4.jpg';
 const about = () => {
@@ -8,7 +8,7 @@ const about = () => {
     return (
         <div className="App">
             <header className="App-header">
-                <NavMobile/>
+                <Nav/>
             </header>
 
                 <div className="aboutContent">
@@ -28,7 +28,7 @@ const about = () => {
                 </div>
 
 
-            <FooterMobile/>
+            <Footer/>
         </div>
     )
 };

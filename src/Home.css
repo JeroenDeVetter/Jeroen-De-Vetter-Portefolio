@@ -4,11 +4,11 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    align-self: center;
 }
 
 .content {
     display: grid;
-
     grid-template-rows: repeat(3,1fr);
     justify-self: center;
     align-self: center;
@@ -57,4 +57,25 @@
     border-radius: 100%;
     width: 9px;
     height: 9px;
+}
+
+@media only screen and (min-width: 800px) {
+    .textHome {
+        font-size: 60px;
+    }
+    .content {
+        height: 300px;
+        width: 300px;
+    }
+    .ball {
+        height: 12px;
+        width: 12px;
+        margin-bottom: 15px;
+    }
+    .spans {
+        font-size: 0.75rem;
+    }
+    .spanContainerHome {
+        width: 150px;
+    }
 }

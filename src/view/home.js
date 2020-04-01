@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
-import NavMobile from "../component/navMobile";
-import FooterMobile from "../component/footerMobile";
+import Nav from "../component/nav";
+import Footer from "../component/footer";
 import Gsap from 'gsap';
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
     return (
         <div className="App">
             <header className="App-header">
-                <NavMobile/>
+                <Nav/>
             </header>
 
                  <div className="pageContent">
@@ -39,7 +39,7 @@ const Home = () => {
                      </div>
                  </div>
 
-            <FooterMobile/>
+            <Footer/>
         </div>
     )
 };

@@ -1,21 +1,18 @@
 import React, {useEffect/*, useState*/} from "react";
-import NavMobile from "../component/navMobile";
-import FooterMobile from "../component/footerMobile";
+import Nav from "../component/nav";
+import Footer from "../component/footer";
 import Axios from "axios";
 import '../contact.css';
 
 const Contact = () => {
-
-    //const [email,setEmail] = useState([]);
-
     useEffect(() => {
         document.querySelector('.sendEmail').addEventListener("submit",(event) => {
+            event.preventDefault();
             const email = document.querySelector('.email').value;
             const firstName = document.querySelector('.first-name').value;
             const lastName = document.querySelector('.last-name').value;
             const massage = document.querySelector('.massage').value;
-            console.log(massage)
-            Axios.post('http://localhost:3001', {
+            Axios.post('https://desolate-citadel-74681.herokuapp.com/', {
                 'from' : `${email}`,
                 'message': `${massage}`,
                 'subject': `project/info request from ${firstName} ${lastName}`
@@ -27,7 +24,7 @@ const Contact = () => {
     return (
         <div className="App">
             <header className="App-header">
-                <NavMobile/>
+                <Nav/>
             </header>
 
             <div className="contactContent">
@@ -51,7 +48,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <FooterMobile/>
+            <Footer/>
         </div>
     )
 };

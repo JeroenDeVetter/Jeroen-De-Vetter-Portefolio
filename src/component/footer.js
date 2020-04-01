@@ -3,7 +3,7 @@ import Github from "../assets/img/github-logo.svg";
 import LinkedIn from  "../assets/img/linkedin.svg";
 import Twitter from  "../assets/img/gmail-svgrepo-com.svg";
 
-const FooterMobile = () => {
+const Footer = () => {
 
     useEffect(() => {
 
@@ -38,4 +38,4 @@ const FooterMobile = () => {
     )
 
 };
-export default FooterMobile;
+export default Footer;

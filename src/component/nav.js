@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import JeroenLogo from '../assets/img/JeroenDeVetterLogo.svg';
 import HamburgerMenu from '../assets/img/Hamburger_Menu.svg';
 import DropDown from "./dropdown";
-function NavMobile() {
+function Nav() {
 
     const [navDisplay, setNavDisplay] = useState('hidden');
     const [opacity, setOpacity] = useState(0);
@@ -33,4 +33,4 @@ function NavMobile() {
     )
 }
 
-export default NavMobile;
+export default Nav;

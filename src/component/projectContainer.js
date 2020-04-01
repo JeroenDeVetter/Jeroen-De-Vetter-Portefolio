@@ -9,7 +9,7 @@ const ProjectContainer = (props) => {
                 <div className="projectInfo">
                     <p>This project is made with react and express.js</p>
                     <p>
-                        This project is made with react and express.jsYou can visit this project on but the backend
+                        You can visit this project on but the backend
                         has no hosting jet
                     </p>
                 </div>
